@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>BOSD</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<style>
+		html {
+			height: 100%;
+			overflow: hidden;
+			cursor: none;
+			user-select: none;
+		}
+
+		body {
+			padding-left: 10%;
+			padding-top: 5%;
+
+			background-color: #0078D7;
+			color: #FFFFFF;
+			font-family: "Segoe UI", Arial, sans-serif;
+			font-weight: lighter;
+
+			width: 1024px;
+			height: 800px;
+		}
+
+		#title {
+			font-size: 155pt;
+			margin-bottom: 15px;
+		}
+
+		#desc, #percent, #footer {
+			margin-left: 7px;
+		}
+
+		#desc {
+			font-size: 32pt;
+			margin-bottom: 32px;
+		}
+		
+		#percent {
+			font-size: 32pt;
+			margin-bottom: 48px;
+		}
+
+		#footer {
+			display: flex;
+			flex-direction: row;
+		}
+
+		#info, #support {
+			margin-top: -8px;
+			padding-left: 20px;
+			padding-bottom: 48px;
+		}
+
+		#info {
+			font-size: 15pt;
+		}
+
+		#support {
+			font-size: 12pt;
+			line-height: 30px;
+		}
+
+		#link {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<div id="title">
+		:(
+	</div>
+	<div id="desc">
+		Your PC ran into a problem and needs to restart We're just collecting some error info and then we'll restart for you.
+	</div>
+	<div id="percent">
+		25% complete
+	</div>
+	<div id="footer">
+		<div id="qr">
+			<img src="https://api.qrserver.com/v1/create-qr-code/?margin=9&size=115x115&color=0078D7&bgcolor=FFFFFF&data=https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+		</div>
+		<div>
+			<div id="info">
+				For more information about this issue and possible fixes, visit <span id="link">https://www.windows.com/stopcode</span>
+			</div>
+			<div id="support">
+				If you call a support person, give them this info:<br>
+				Stop code: CRITICAL_PROCESS_DIED
+			</div>
+		</div>		
+	</div>
+</body>
+</html>
